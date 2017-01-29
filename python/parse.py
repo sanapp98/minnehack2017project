@@ -17,10 +17,24 @@ class Transition:
 
     def detect_too_many_bathroom_uses(self):
         uses = 0
-        for i in range(self.transitions):
-            if self.transitions[i] == 'bathroom':
+        for i in self.transitions:
+            if i == 'bathroom':
                 uses += 1
         return uses >= 4
+
+    def detect_leaving_house(self):
+        L_room_combinations=[] 
+        for i in possible:
+            for j in (1,len(possible)+1):
+                L_room_pair=[]
+                L_room_pair.append(i)
+                L_room_pair.append(possible[j])
+                L_room_combinations.append(L_room_pair)
+                
+                             
+                
+            
+    
 
     # def detect_not_waking_up(self):
     #     not_waking_up = True
