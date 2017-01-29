@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config.from_object(BaseConfig)
 db = SQLAlchemy(app)
 sockets = Sockets(app)
-app = FlaskPytest(app)
+# app = FlaskPytest(app)
 
 
 from models import *
